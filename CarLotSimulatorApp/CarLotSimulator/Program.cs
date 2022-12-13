@@ -32,6 +32,10 @@ namespace CarLotSimulator
             car1.MakeHonkNoise($"The {car1.Model}'s horn goes {car1.HonkNoise}");
 
             carLot.listOfCars.Add(car1);
+            Console.WriteLine();
+            CarLot.numberOfCars++;
+            Console.WriteLine($"The current number of cars in our carlot: {CarLot.numberOfCars}");
+            Console.WriteLine();
 
             Car car2 = new Car() 
             { Year = 1952, 
@@ -46,6 +50,10 @@ namespace CarLotSimulator
             car2.MakeHonkNoise($"The {car2.Model}'s horn goes {car2.HonkNoise}");
 
             carLot.listOfCars.Add(car2);
+            Console.WriteLine();
+            CarLot.numberOfCars++;
+            Console.WriteLine($"The current number of cars in our carlot: {CarLot.numberOfCars}");
+            Console.WriteLine();
 
             Car car3 = new Car(1988, "Chevy", "Corvette", "prrr prrr", "honk honk", true);
 
@@ -53,6 +61,10 @@ namespace CarLotSimulator
             car3.MakeHonkNoise($"The {car3.Model}'s horn goes {car3.HonkNoise}");
 
             carLot.listOfCars.Add(car3);
+            Console.WriteLine();
+            CarLot.numberOfCars++;
+            Console.WriteLine($"The current number of cars in our carlot: {CarLot.numberOfCars}");
+            Console.WriteLine();
 
             foreach (var car in carLot.listOfCars)
             {
